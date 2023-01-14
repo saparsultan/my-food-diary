@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: .1px;
+}
+
+.nav {
+  &-list {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: var(--gray);
+    border-radius: 50px;
+    &__link {
+      display: inline-flex;
+      padding: 12px 24px;
+      font-weight: 600;
+      line-height: 125%;
+      letter-spacing: .1px;
+      border-radius: 50px;
+      &--active {
+        background-color: var(--white)
+      }
+    }
+  }
+}
