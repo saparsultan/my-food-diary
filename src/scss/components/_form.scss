@@ -1,0 +1,57 @@
+.form-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  background-color: $white-color;
+  border-radius: 24px;
+  padding: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.form-title {
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    line-height: 22px;
+    margin-bottom: 8px;
+    color: $black64;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px 16px;
+    line-height: 20px;
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px 4px rgba(1, 152, 82, .14);
+    &::placeholder {
+      color: $black40;
+    }
+  }
+  &__select {
+    appearance: none;
+    background: url('../../assets/images/arrow-select.svg') no-repeat right;
+    background-position-x: calc(100% - 16px);
+  }
+  &--row {
+    align-items: center;
+    flex-direction: row;
+    label {
+      width: 106px;
+      margin-bottom: 0;
+      margin-right: 24px;
+    }
+    input {
+      width: 100px;
+    }
+  }
+}
+
+.form-footer {
+  padding-top: 6px;
+}
